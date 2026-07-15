@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indonesia · Jul–Aug 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500;1,9..144,600&display=swap');
+
+:root{
+  --a:#e8540a;--b:#ff8a4d;--c:#ffb96a;
+  --ink:#2a1a0e;--sub:#5a4636;--muted:#9a8268;--border:#f0e2d0;
+  --page:#fff8f0;--card:#ffffff;
+  --radius:16px;--rinner:12px;--done-op:0.38;
+  --page-ink:#ffffff;--page-sub:rgba(255,255,255,0.82);--page-muted:rgba(255,255,255,0.62);--page-border:rgba(255,255,255,0.28);
+  --teal-bg:#bdeee6;--teal-c:#075c4e;--teal-pill:#dff7f2;
+  --coral-bg:#ffcab0;--coral-c:#9a2800;--coral-pill:#ffe4d6;
+  --sky-bg:#bfe0fb;--sky-c:#084a8a;--sky-pill:#dcedff;
+  --lime-bg:#d4f0b8;--lime-c:#245800;--lime-pill:#e6f5db;
+  --amber-bg:#ffe4a3;--amber-c:#6a3800;--amber-pill:#fff0d2;
+  --pink-bg:#f6cdec;--pink-c:#720a50;--pink-pill:#fce0f0;
+  --indigo-bg:#cdd1fb;--indigo-c:#1e2498;--indigo-pill:#e2e3ff;
+  --rose-bg:#ffc9d6;--rose-c:#880828;--rose-pill:#ffe0e8;
+  --purple-bg:#e2cdfa;--purple-c:#4a1090;--purple-pill:#ece0fb;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;background:var(--page);}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--ink);
+  font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  min-height:100vh;
+  position:relative;
+  background:
+    radial-gradient(ellipse 70% 50% at 15% 10%,rgba(255,138,77,0.22) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 45% at 90% 15%,rgba(232,84,10,0.16) 0%,transparent 60%),
+    radial-gradient(ellipse 55% 45% at 85% 55%,rgba(160,172,248,0.16) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 50% at 10% 85%,rgba(126,221,208,0.16) 0%,transparent 60%),
+    var(--page);
+  background-attachment:fixed;
+}
+
+/* ── HEADER — warm coral gradient, bright travel-app feel ── */
+header{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#ff8a4d,#ff5e3a);
+  color:#fff;
+}
+header::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 70% 80% at 85% 6%,rgba(255,255,255,0.22) 0%,transparent 55%);
+}
+
+.header-inner{position:relative;z-index:1;display:flex;align-items:stretch;min-height:200px;}
+.header-graphic{
+  width:170px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(0,0,0,0.10);
+  border-right:1px solid rgba(255,255,255,0.10);
+}
+.header-text{padding:32px 28px 56px;flex:1;display:flex;flex-direction:column;justify-content:center;}
+
+.eyebrow{
+  font-size:10px;letter-spacing:0.26em;text-transform:uppercase;
+  color:rgba(255,255,255,0.5);margin-bottom:10px;font-weight:600;
+  display:flex;align-items:center;gap:8px;
+}
+.eyebrow::before{content:'';width:24px;height:1px;background:rgba(255,255,255,0.3);}
+
+header h1{
+  font-size:clamp(30px,6vw,52px);font-weight:800;line-height:1.0;
+  margin-bottom:10px;letter-spacing:-0.035em;
+  position:relative;display:inline-block;
+}
+header h1 .italic-accent{
+  font-family:'Fraunces',Georgia,serif;
+  font-style:italic;font-weight:600;letter-spacing:-0.01em;
+  font-size:clamp(40px,7.5vw,68px);
+  color:#fff;
+  text-shadow:0 3px 0 rgba(150,40,0,0.25);
+  display:inline-block;
+  position:relative;
+}
+header h1 .italic-accent::after{
+  content:'';position:absolute;left:2%;right:4%;bottom:-10px;height:10px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 16' preserveAspectRatio='none'%3E%3Cpath d='M2 8 Q 20 -2, 40 8 T 80 8 T 120 8 T 160 8 T 198 8' fill='none' stroke='%23ffd9b8' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100% 100%;
+  opacity:0.85;
+}
+
+.route{font-size:12px;color:var(--page-muted);margin-bottom:20px;letter-spacing:0.06em;}
+
+.header-pills{display:flex;flex-wrap:wrap;gap:7px;}
+.hpill{
+  display:flex;align-items:center;gap:5px;
+  background:rgba(255,255,255,0.16);
+  border:1px solid rgba(255,255,255,0.28);
+  border-radius:100px;padding:5px 13px;
+  font-size:11px;font-weight:600;color:rgba(255,255,255,0.95);
+}
+.hpill svg{width:12px;height:12px;opacity:0.85;}
+.hpill.live{background:rgba(255,255,255,0.30);border-color:rgba(255,255,255,0.5);}
+
+/* ── STATS ROW ── */
+.stats-row{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+  padding:20px 16px 8px;max-width:880px;margin:0 auto;
+}
+.stat{
+  background:#fff2e6;
+  border:1px solid #ffe2c8;
+  border-radius:var(--rinner);
+  padding:16px 18px;animation:fadeUp 0.5s ease both;
+  box-shadow:0 6px 18px rgba(230,120,40,0.10);
+}
+.stat:nth-child(1){animation-delay:0.05s;}
+.stat:nth-child(2){animation-delay:0.10s;}
+.stat:nth-child(3){animation-delay:0.15s;}
+.stat:nth-child(4){animation-delay:0.20s;}
+.stat-num{font-size:26px;font-weight:900;color:var(--a);letter-spacing:-0.03em;line-height:1;}
+.stat-lbl{font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);font-weight:600;margin-top:4px;}
+
+/* ── MAIN ── */
+main{max-width:880px;margin:0 auto;padding:6px 16px 80px;}
+
+.section-label{
+  font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;
+  color:var(--muted);margin:32px 0 16px 0;
+  display:flex;align-items:center;gap:10px;
+}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border);}
+
+/* ── NO TIMELINE — cards stack directly ── */
+.timeline{display:flex;flex-direction:column;gap:10px;}
+.tl-line{display:none;}
+.trow{animation:fadeUp 0.45s ease both;}
+.trow:nth-child(1){animation-delay:0.06s;}.trow:nth-child(2){animation-delay:0.10s;}
+.trow:nth-child(3){animation-delay:0.14s;}.trow:nth-child(4){animation-delay:0.18s;}
+.trow:nth-child(5){animation-delay:0.22s;}.trow:nth-child(6){animation-delay:0.26s;}
+.trow:nth-child(7){animation-delay:0.30s;}.trow:nth-child(8){animation-delay:0.34s;}
+.trow:nth-child(9){animation-delay:0.38s;}.trow:nth-child(10){animation-delay:0.42s;}
+.trow:nth-child(11){animation-delay:0.46s;}.trow:nth-child(12){animation-delay:0.50s;}
+.trow:nth-child(13){animation-delay:0.54s;}.trow:nth-child(14){animation-delay:0.58s;}
+.trow:nth-child(15){animation-delay:0.62s;}.trow:nth-child(16){animation-delay:0.66s;}
+.trow:nth-child(17){animation-delay:0.70s;}.trow:nth-child(18){animation-delay:0.74s;}
+.trow:nth-child(19){animation-delay:0.78s;}.trow:nth-child(20){animation-delay:0.82s;}
+
+/* hide dot column entirely */
+.trow-dot{display:none;}
+.trow-card{width:100%;}
+
+/* ── CARD — solid surface, crisp elevation ── */
+.trip-card{
+  position:relative;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);overflow:hidden;cursor:pointer;
+  box-shadow:0 6px 18px rgba(230,120,40,0.10);
+  transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1),border-color 0.18s,box-shadow 0.2s;
+}
+.trip-card:hover{
+  transform:translateY(-3px);
+  border-color:#f6d8bc;
+  box-shadow:0 14px 30px rgba(230,120,40,0.16);
+}
+.trip-card.open{
+  border-color:rgba(232,84,10,0.4);
+  box-shadow:0 14px 32px rgba(230,120,40,0.18);
+  transform:none;
+}
+.trow.is-today .trip-card{
+  border-color:rgba(232,84,10,0.6);
+  box-shadow:0 0 0 3px rgba(232,84,10,0.14),0 12px 28px rgba(230,120,40,0.18);
+}
+.trow.is-done .trip-card{opacity:var(--done-op);}
+.trow.is-done .trip-card:hover{opacity:0.6;transform:translateY(-1px);}
+
+/* ── TODAY BANNER ── */
+.today-banner{
+  background:linear-gradient(90deg,#d85a1e,var(--a),var(--b));
+  padding:6px 18px;
+  display:flex;align-items:center;gap:6px;
+  font-size:10px;font-weight:800;letter-spacing:0.18em;
+  text-transform:uppercase;color:#fff;
+}
+.today-banner svg{width:11px;height:11px;}
+
+/* ── CARD ROW ── */
+.card-row{display:flex;align-items:center;gap:14px;padding:16px 18px;}
+
+.card-icon{
+  width:48px;height:48px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1);
+}
+.trip-card:hover .card-icon{transform:scale(1.10) rotate(-3deg);}
+.card-icon svg{width:24px;height:24px;}
+
+.card-meta{flex:1;min-width:0;}
+.card-date{
+  font-size:10px;font-weight:800;text-transform:uppercase;
+  letter-spacing:0.12em;color:var(--ink);margin-bottom:3px;
+}
+.trow.is-today .card-date{color:var(--a);}
+.card-name{
+  font-size:15px;font-weight:800;color:var(--ink);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  letter-spacing:-0.01em;
+}
+.trow.is-done .card-name{color:#b0a898;}
+.card-hint{font-size:12px;color:var(--muted);margin-top:2px;}
+
+.card-right{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.type-pill{
+  font-size:10px;font-weight:800;letter-spacing:0.07em;text-transform:uppercase;
+  padding:5px 12px;border-radius:100px;white-space:nowrap;
+}
+.chevron{
+  width:30px;height:30px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  background:#fbeee0;border:1px solid var(--border);
+  transition:transform 0.22s cubic-bezier(0.34,1.56,0.64,1),background 0.15s;
+  color:var(--muted);flex-shrink:0;
+}
+.chevron svg{width:15px;height:15px;}
+.trip-card.open .chevron{transform:rotate(180deg);background:rgba(232,84,10,0.12);border-color:rgba(232,84,10,0.3);color:var(--a);}
+
+/* ── DETAIL PANEL ── */
+.card-detail{
+  max-height:0;overflow:hidden;
+  transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+  border-top:0px solid var(--border);
+}
+.trip-card.open .card-detail{max-height:2400px;border-top-width:1px;}
+.detail-inner{
+  padding:18px 20px 20px;
+  background:#fffaf5;
+}
+
+/* ── DETAIL INTERNALS ── */
+.d-section{
+  font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:0.16em;
+  color:var(--muted);margin:16px 0 8px;
+  display:flex;align-items:center;gap:8px;
+}
+.d-section::after{content:'';flex:1;height:1px;background:var(--border);}
+.d-section:first-child{margin-top:0;}
+
+.drow{
+  display:flex;gap:10px;padding:8px 0;
+  border-bottom:1px solid rgba(210,200,185,0.45);align-items:flex-start;
+}
+.drow:last-child{border-bottom:none;}
+.dlabel{
+  font-size:10px;text-transform:uppercase;letter-spacing:0.07em;
+  color:var(--muted);font-weight:700;min-width:80px;flex-shrink:0;padding-top:2px;
+}
+.dval{font-size:13px;font-weight:500;flex:1;color:var(--ink);line-height:1.5;}
+.code{
+  font-family:'SF Mono',Monaco,'Courier New',monospace;font-size:11.5px;
+  background:rgba(240,235,225,0.9);border:1px solid var(--border);
+  padding:2px 8px;border-radius:7px;color:#3a2a10;display:inline-block;
+  letter-spacing:0.05em;
+}
+
+/* ── ALERTS ── */
+.alert{
+  border-radius:12px;padding:11px 14px;font-size:12.5px;
+  margin-top:10px;display:flex;gap:10px;align-items:flex-start;
+  border-left:3px solid;
+}
+.alert svg{width:14px;height:14px;flex-shrink:0;margin-top:2px;}
+.alert-warn{background:#fff2df;border-color:#e07000;color:#5c2e00;}
+.alert-info{background:#e2effc;border-color:#1a60c0;color:#0a2a60;}
+.alert-ok{background:#e2f6e9;border-color:#1a7040;color:#0e3820;}
+
+/* ── SCHEDULE ── */
+.sched{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--rinner);overflow:hidden;margin-top:10px;
+}
+.srow{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:10px 15px;border-bottom:1px solid rgba(220,210,195,0.5);
+}
+.srow:last-child{border-bottom:none;}
+.stime{
+  font-family:'SF Mono',Monaco,monospace;
+  font-size:11px;font-weight:700;color:var(--a);
+  min-width:62px;flex-shrink:0;padding-top:2px;
+}
+.sdesc{font-size:13px;color:var(--ink);font-weight:500;flex:1;line-height:1.5;}
+
+/* ── CONTACTS ── */
+.contact-block{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--rinner);overflow:hidden;margin-top:10px;
+}
+.crow{display:flex;align-items:center;gap:12px;padding:10px 15px;border-bottom:1px solid rgba(220,210,195,0.5);}
+.crow:last-child{border-bottom:none;}
+.cicon{
+  width:32px;height:32px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  background:#f2f2f3;
+}
+.cicon svg{width:15px;height:15px;color:var(--sub);}
+.cinfo{flex:1;}
+.clabel{font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);font-weight:700;}
+.cval{font-size:13px;font-weight:500;color:var(--ink);}
+.cval a{color:var(--a);text-decoration:none;font-weight:600;}
+.cval a:hover{text-decoration:underline;}
+
+/* ── TAGS ── */
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+.tag{
+  font-size:11px;font-weight:600;padding:5px 11px;
+  border-radius:100px;background:#f2f2f3;color:var(--sub);
+  border:1px solid var(--border);display:flex;align-items:center;gap:5px;
+}
+.tag svg{width:12px;height:12px;}
+
+/* ── INCLUSIONS ── */
+.inc-grid{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+.inc{
+  font-size:11px;font-weight:700;padding:5px 11px;
+  border-radius:100px;
+  background:var(--coral-pill);color:var(--a);
+  border:1px solid rgba(255,90,54,0.18);
+}
+
+/* ── BUTTONS ── */
+.btn-row{
+  display:flex;flex-wrap:wrap;gap:8px;
+  margin-top:14px;padding-top:14px;border-top:1px solid var(--border);
+}
+.map-btn,.gmail-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:12px;font-weight:700;text-decoration:none;
+  padding:8px 14px;border-radius:10px;
+  transition:transform 0.15s,box-shadow 0.15s;
+}
+.map-btn:hover,.gmail-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+.map-btn{background:#f2f2f3;color:var(--sub);border:1px solid var(--border);}
+.gmail-btn{background:var(--coral-pill);color:var(--a);border:1px solid rgba(255,90,54,0.22);}
+.map-btn svg,.gmail-btn svg{width:14px;height:14px;}
+
+/* ── COPY BUTTON ── */
+.copy-btn{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:10px;font-weight:700;letter-spacing:0.04em;
+  padding:3px 9px;border-radius:7px;border:none;cursor:pointer;
+  background:#f2f2f3;color:var(--sub);border:1px solid var(--border);
+  transition:background 0.15s,color 0.15s,transform 0.12s;
+  vertical-align:middle;margin-left:6px;flex-shrink:0;
+}
+.copy-btn:hover{background:rgba(255,90,54,0.13);color:var(--a);transform:scale(1.05);}
+.copy-btn.copied{background:rgba(26,112,64,0.13);color:#1a7040;}
+.copy-btn svg{width:11px;height:11px;}
+.dval-wrap{display:flex;align-items:center;flex:1;flex-wrap:wrap;gap:4px;}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(16px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:540px){
+  .header-graphic{width:100px;}
+  header h1{font-size:28px;}
+  .stats-row{grid-template-columns:repeat(2,1fr);}
+  .dlabel{min-width:64px;}
+  .card-name{font-size:14px;}
+  .card-row{padding:13px 14px;}
+}
+</style>
+</head>
+<body>
+
+<!-- INLINE SVG ICONS -->
+<svg style="display:none">
+  <symbol id="i-plane-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l3-1 3 3 7-7-1-3 2-2 3 7-7 7-3-1-3 3-2-1z"/><line x1="3" y1="21" x2="21" y2="21"/></symbol>
+  <symbol id="i-plane-land" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20M5 14l2 2 7-3 4 2 2-1-3-5-3 1-1-3-2 1 1 4z"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12l-18-6 3 6-3 6z"/><line x1="6" y1="12" x2="21" y2="12"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></symbol>
+  <symbol id="i-ship" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18a2 2 0 004 0 2 2 0 004 0 2 2 0 004 0 2 2 0 004 0"/><path d="M4 18l-1-6h18l-1 6"/><path d="M8 12V6h8v6"/><path d="M12 6V3"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v11M21 9v11M3 20h18M3 9a5 5 0 015-5h8a5 5 0 015 5"/><path d="M3 12h18"/></symbol>
+  <symbol id="i-anchor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><line x1="12" y1="8" x2="12" y2="21"/><path d="M5 15H3a9 9 0 0018 0h-2"/><line x1="5" y1="11" x2="19" y2="11"/></symbol>
+  <symbol id="i-mountain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 20 2 20"/><line x1="10" y1="10" x2="14" y2="10"/></symbol>
+  <symbol id="i-water" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6 9 4 12.5 4 15a8 8 0 0016 0c0-2.5-2-6-8-13z"/></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 01-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></symbol>
+  <symbol id="i-beach" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 6.343A8 8 0 006.343 17.657"/><path d="M3.5 20.5l7-7"/><path d="M12.5 12.5l7-7"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="8"/><line x1="12" y1="12" x2="12" y2="16"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></symbol>
+  <symbol id="i-gmail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="i-islands" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></symbol>
+  <symbol id="i-check2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-scooter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="17" r="2"/><circle cx="19" cy="17" r="2"/><path d="M7 17h10v-5l-3-5H9l-2 5"/><path d="M12 7V4"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+  <symbol id="i-island" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C7 8 5 11 5 14a7 7 0 0014 0c0-3-2-6-7-12z"/><path d="M2 20h20"/></symbol>
+  <symbol id="i-jump" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v5l3 3"/><path d="M7 22l5-7 5 7"/></symbol>
+  <symbol id="i-shop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></symbol>
+  <symbol id="i-temple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10M19 21V10M12 3l7 7H5l7-7z"/><rect x="9" y="14" width="6" height="7"/></symbol>
+  <symbol id="i-atv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="17" r="2.5"/><circle cx="18" cy="17" r="2.5"/><path d="M8.5 17h7M4 12l2-5h8l2 3 2 2"/><path d="M12 7V4l3 1"/></symbol>
+</svg>
+
+<!-- ══════════════════════════════════════ HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="header-graphic">
+      <!-- Bali temple illustration -->
+      <svg viewBox="0 0 110 130" width="96" height="114" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- stars -->
+        <circle cx="20" cy="18" r="1.2" fill="rgba(255,220,120,0.5)"/>
+        <circle cx="88" cy="12" r="0.8" fill="rgba(255,220,120,0.4)"/>
+        <circle cx="72" cy="28" r="1" fill="rgba(255,220,120,0.35)"/>
+        <circle cx="35" cy="8" r="0.9" fill="rgba(255,220,120,0.45)"/>
+        <!-- moon crescent -->
+        <path d="M82 22 A8 8 0 1 1 82 38 A5 5 0 1 0 82 22Z" fill="rgba(255,220,120,0.2)"/>
+        <!-- temple base -->
+        <rect x="32" y="90" width="46" height="28" rx="2" fill="rgba(255,255,255,0.1)"/>
+        <!-- gate arch -->
+        <rect x="47" y="96" width="16" height="22" rx="8" fill="rgba(0,0,0,0.2)"/>
+        <!-- tier 1 roof -->
+        <polygon points="24,90 55,64 86,90" fill="rgba(255,255,255,0.07)"/>
+        <polygon points="28,90 55,67 82,90" fill="rgba(255,255,255,0.05)"/>
+        <!-- tier 2 roof -->
+        <polygon points="30,72 55,50 80,72" fill="rgba(255,255,255,0.09)"/>
+        <polygon points="33,72 55,53 77,72" fill="rgba(255,255,255,0.06)"/>
+        <!-- tier 3 roof -->
+        <polygon points="36,55 55,38 74,55" fill="rgba(255,255,255,0.11)"/>
+        <polygon points="39,55 55,41 71,55" fill="rgba(255,255,255,0.07)"/>
+        <!-- tier 4 roof -->
+        <polygon points="42,40 55,26 68,40" fill="rgba(255,255,255,0.14)"/>
+        <!-- spire -->
+        <line x1="55" y1="26" x2="55" y2="8" stroke="rgba(255,220,120,0.4)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="55" cy="6" r="3" fill="rgba(255,220,120,0.35)"/>
+        <!-- left palm -->
+        <line x1="16" y1="105" x2="20" y2="70" stroke="rgba(255,255,255,0.18)" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M20 73 Q8 62 4 52 M20 73 Q14 65 16 56 M20 73 Q26 64 30 56" stroke="rgba(255,255,255,0.18)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <!-- right palm -->
+        <line x1="94" y1="105" x2="90" y2="72" stroke="rgba(255,255,255,0.18)" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M90 75 Q102 64 106 54 M90 75 Q96 67 94 58 M90 75 Q84 66 80 58" stroke="rgba(255,255,255,0.18)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <!-- ground wave -->
+        <path d="M4 120 Q28 116 55 120 Q82 124 106 120" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="header-text">
+      <div class="eyebrow">20 Jul – 6 Aug 2026</div>
+      <h1><span class="italic-accent">Indonesia</span></h1>
+      <p class="route">Bali &nbsp;·&nbsp; Lombok &nbsp;·&nbsp; Komodo &nbsp;·&nbsp; East Java</p>
+      <div class="header-pills">
+        <div class="hpill"><svg><use href="#i-cal"/></svg>17 nights</div>
+        <div class="hpill"><svg><use href="#i-users"/></svg>2 travellers</div>
+        <div class="hpill"><svg><use href="#i-islands"/></svg>4 islands</div>
+        <div class="hpill live" id="status-pill">—</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════ STATS -->
+<div class="stats-row">
+  <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Flights booked</div></div>
+  <div class="stat"><div class="stat-num">1</div><div class="stat-lbl">Ferry crossing</div></div>
+  <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Nights at sea</div></div>
+  <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">Stays confirmed</div></div>
+</div>
+
+<!-- ══════════════════════════════════════ TIMELINE -->
+<main>
+  <div class="section-label">Your itinerary</div>
+  <div class="timeline">
+    <div class="tl-line"></div>
+
+    <!-- ① OUTBOUND FLIGHT -->
+    <div class="trow" data-start="2026-07-20" data-end="2026-07-20">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#fff0e0,#ffe4c8);color:#c84b00"><span style="font-size:22px;line-height:1">✈️</span></div>
+            <div class="card-meta">
+              <div class="card-date">Mon 20 Jul</div>
+              <div class="card-name">Fly Avalon → Bali</div>
+              <div class="card-hint">Jetstar JQ049 · departs 5:40 PM</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#fff0e0;color:#c84b00;">Flight</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Flight details</div>
+            <div class="drow"><span class="dlabel">Flight</span><span class="dval">Jetstar JQ049 · Airbus A321neo · Economy</span></div>
+            <div class="drow"><span class="dlabel">Departs</span><span class="dval">5:40 PM — Avalon Airport (AVV)</span></div>
+            <div class="drow"><span class="dlabel">Arrives</span><span class="dval">9:50 PM — Denpasar (DPS), Bali</span></div>
+            <div class="drow"><span class="dlabel">PNR codes</span><div class="dval-wrap"><span class="code">KWYCJK</span> &nbsp;<span class="code">YWS6TZ</span> &nbsp;<span class="code">WWMSUZ</span><button class="copy-btn" onclick="copyText('KWYCJK / YWS6TZ / WWMSUZ',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Booking</span><div class="dval-wrap"><span class="code">1167730416544757</span><span style="font-size:12px;color:var(--muted);"> via Trip.com</span><button class="copy-btn" onclick="copyText('1167730416544757',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span><strong>No free checked baggage.</strong> Carry-on + personal item, max 7 kg combined. Add bags via jetstar.com before check-in using your PNR.</span></div>
+            <div class="alert alert-info"><svg><use href="#i-clock"/></svg><span>Arrive at Avalon by <strong>2:40 PM</strong> — 3 hours before departure.</span></div>
+            <div class="btn-row"><a class="gmail-btn" href="https://mail.google.com/mail/u/0/#inbox/19e20dbe820addb5" target="_blank"><svg><use href="#i-gmail"/></svg> Booking email</a></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ② TURTLE SHELTER -->
+    <div class="trow" data-start="2026-07-20" data-end="2026-07-21">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#e0f4f0,#c8ece6);color:#0d7a6b"><span style="font-size:22px;line-height:1">🏠</span></div>
+            <div class="card-meta">
+              <div class="card-date">Mon 20 Jul — Night 1</div>
+              <div class="card-name">Turtle Shelter Guest House</div>
+              <div class="card-hint">Sanur, Bali</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#e0f4f0;color:#0d7a6b;">Stay</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Accommodation</div>
+            <div class="drow"><span class="dlabel">Address</span><div class="dval-wrap"><span>Jl. Danau Tandakan No.9, 80227 Sanur, Bali</span><button class="copy-btn" onclick="copyText('Jl. Danau Tandakan No.9, Sanur, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Platform</span><span class="dval">Booking.com</span></div>
+            <div class="drow"><span class="dlabel">Booking ref</span><div class="dval-wrap"><span class="code">5486745967197884180</span><button class="copy-btn" onclick="copyText('5486745967197884180',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">PIN</span><span class="dval"><span class="code">597912</span></span></div>
+            <div class="alert alert-ok"><svg><use href="#i-ok"/></svg><span>Semaya One ferry shuttle picks you up <strong>here at 10:30 AM</strong> on 21 Jul — be ready out front.</span></div>
+            <div class="btn-row">
+              <a class="map-btn" href="https://maps.google.com/?q=Jl.+Danau+Tandakan+No.9+Sanur+Bali" target="_blank"><svg><use href="#i-pin"/></svg> Open in Maps</a>
+              <a class="gmail-btn" href="https://mail.google.com/mail/u/0/#inbox/19f2735933649a6e" target="_blank"><svg><use href="#i-gmail"/></svg> Booking email</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ③ SHOPPING -->
+    <div class="trow" data-start="2026-07-21" data-end="2026-07-21">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#fff5e0,#ffe8b8);color:#9a6200"><span style="font-size:22px;line-height:1">🎒</span></div>
+            <div class="card-meta">
+              <div class="card-date">Tue 21 Jul — Before 10:00 AM</div>
+              <div class="card-name">Supplies run — Icon Bali Mall</div>
+              <div class="card-hint">Sunscreen · repellent · slippers</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#fff5e0;color:#9a6200;">Errand</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Location</div>
+            <div class="drow"><span class="dlabel">Mall</span><span class="dval">Icon Bali — ~10 min walk from Turtle Shelter</span></div>
+            <div class="drow"><span class="dlabel">Address</span><span class="dval">Jl. Danau Tamblingan No.27, Sanur, Bali</span></div>
+            <div class="drow"><span class="dlabel">Opens</span><span class="dval">10:00 AM · pharmacy inside (Apotek)</span></div>
+            <div class="d-section">Shopping list</div>
+            <div class="tags">
+              <span class="tag"><svg><use href="#i-sun"/></svg>Sunscreen SPF 50+</span>
+              <span class="tag">Insect repellent (DEET)</span>
+              <span class="tag">Slippers / thongs</span>
+            </div>
+            <div class="alert alert-warn"><svg><use href="#i-clock"/></svg><span>Ferry shuttle leaves Turtle Shelter at <strong>10:30 AM</strong>. Be back by 10:00 AM.</span></div>
+            <div class="btn-row"><a class="map-btn" href="https://maps.google.com/?q=Icon+Bali+Jl+Danau+Tamblingan+Sanur" target="_blank"><svg><use href="#i-pin"/></svg> Icon Bali on Maps</a></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ④ FERRY -->
+    <div class="trow" data-start="2026-07-21" data-end="2026-07-21">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#e0ecff,#c8dcfa);color:#1a5fa8"><span style="font-size:22px;line-height:1">⛴️</span></div>
+            <div class="card-meta">
+              <div class="card-date">Tue 21 Jul</div>
+              <div class="card-name">Ferry — Padang Bai to Senggigi</div>
+              <div class="card-hint">Semaya One · departs 1:20 PM</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#e0ecff;color:#1a5fa8;">Ferry</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Booking</div>
+            <div class="drow"><span class="dlabel">Service</span><span class="dval">Semaya Darmajaya Jet</span></div>
+            <div class="drow"><span class="dlabel">Voucher</span><div class="dval-wrap"><span class="code">SWA260703KHSQ</span><button class="copy-btn" onclick="copyText('SWA260703KHSQ',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Order</span><div class="dval-wrap"><span class="code">41783069317</span><button class="copy-btn" onclick="copyText('41783069317',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="d-section">Journey</div>
+            <div class="drow"><span class="dlabel">Pickup</span><span class="dval">10:30 AM — Turtle Shelter Guest House, Sanur</span></div>
+            <div class="drow"><span class="dlabel">Departs</span><span class="dval">1:20 PM — Padang Bai, Bali</span></div>
+            <div class="drow"><span class="dlabel">Arrives</span><span class="dval">2:50 PM — Senggigi, Lombok</span></div>
+            <div class="d-section">Inclusions</div>
+            <div class="inc-grid">
+              <span class="inc">40 kg baggage + handling</span>
+              <span class="inc">Sundeck access</span>
+              <span class="inc">Insurance</span>
+              <span class="inc">Mineral water</span>
+            </div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span>Check in <strong>45 min before</strong> departure at Padang Bai. Harbour retribution fee is NOT included — pay separately at the port.</span></div>
+            <div class="d-section">Semaya One contacts</div>
+            <div class="contact-block">
+              <div class="crow"><div class="cicon"><svg><use href="#i-phone"/></svg></div><div class="cinfo"><div class="clabel">WhatsApp</div><div class="cval"><a href="tel:+6282144304858">+62 821 4430 4858</a></div></div></div>
+              <div class="crow"><div class="cicon"><svg><use href="#i-mail"/></svg></div><div class="cinfo"><div class="clabel">Booking</div><div class="cval"><a href="mailto:booking@semayaone.com">booking@semayaone.com</a></div></div></div>
+              <div class="crow"><div class="cicon"><svg><use href="#i-mail"/></svg></div><div class="cinfo"><div class="clabel">Reservation — Dea</div><div class="cval"><a href="mailto:semayaonefastcruises@gmail.com">semayaonefastcruises@gmail.com</a></div></div></div>
+              <div class="crow"><div class="cicon"><svg><use href="#i-web"/></svg></div><div class="cinfo"><div class="clabel">Website</div><div class="cval"><a href="https://semayaone.com" target="_blank">semayaone.com</a></div></div></div>
+              <div class="crow"><div class="cicon"><svg><use href="#i-pin"/></svg></div><div class="cinfo"><div class="clabel">Office</div><div class="cval">Jl. Waribang No.21A, Kesiman Petilan, Denpasar, Bali 80237</div></div></div>
+            </div>
+            <div class="btn-row">
+              <a class="map-btn" href="https://maps.app.goo.gl/1SLYiRV3mSd2FMq68" target="_blank"><svg><use href="#i-pin"/></svg> Padang Bai check-in</a>
+              <a class="gmail-btn" href="https://mail.google.com/mail/u/0/#inbox/19f2739a0e53cf5e" target="_blank"><svg><use href="#i-gmail"/></svg> Payment confirmation</a>
+              <a class="gmail-btn" href="https://mail.google.com/mail/u/0/#inbox/19f273c79df208be" target="_blank"><svg><use href="#i-gmail"/></svg> Reconfirmation</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑤ KUTA LOMBOK -->
+    <div class="trow" data-start="2026-07-21" data-end="2026-07-23">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#e4f0ea,#c8e4d2);color:#2a6040"><span style="font-size:22px;line-height:1">🛏️</span></div>
+            <div class="card-meta">
+              <div class="card-date">Tue–Wed 21–22 Jul</div>
+              <div class="card-name">Kuta, Lombok</div>
+              <div class="card-hint">Lost Inn + Puri Rinjani hostels</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#e4f0ea;color:#2a6040;">2 nights</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Accommodation</div>
+            <div class="drow"><span class="dlabel">Hostel A</span><span class="dval">Lost Inn Kuta Hostel, Kuta Lombok</span></div>
+            <div class="drow"><span class="dlabel">Hostel B</span><span class="dval">Puri Rinjani Hostel, Kuta Lombok</span></div>
+            <div class="drow"><span class="dlabel">Platform</span><span class="dval">Hostelworld — check app for exact night allocation</span></div>
+            <div class="btn-row">
+              <a class="gmail-btn" href="https://mail.google.com/mail/u/0/#inbox/19f2751547b62d6d" target="_blank"><svg><use href="#i-gmail"/></svg> Lost Inn email</a>
+              <a class="gmail-btn" href="https://mail.google.com/mail/u/0/#inbox/19f275504b8e504e" target="_blank"><svg><use href="#i-gmail"/></svg> Puri Rinjani email</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑥ LIVEABOARD -->
+    <div class="trow" data-start="2026-07-23" data-end="2026-07-26">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#ede0f8,#ddc8f4);color:#5a3a8a"><span style="font-size:22px;line-height:1">⚓</span></div>
+            <div class="card-meta">
+              <div class="card-date">Thu–Sun 23–26 Jul</div>
+              <div class="card-name">Komodo Liveaboard — Al Fatran 3</div>
+              <div class="card-hint">Kayangan Harbour → Labuan Bajo</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#ede0f8;color:#5a3a8a;">3 nights</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Booking</div>
+            <div class="drow"><span class="dlabel">Vessel</span><span class="dval">Al Fatran 3</span></div>
+            <div class="drow"><span class="dlabel">Agreement</span><div class="dval-wrap"><span class="code">#2026051304</span><button class="copy-btn" onclick="copyText('#2026051304',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Departs</span><span class="dval">Thu 23 Jul — Kayangan Harbour, Lombok</span></div>
+            <div class="drow"><span class="dlabel">Ends</span><span class="dval">Sun 26 Jul — Labuan Bajo</span></div>
+            <div class="alert alert-ok"><svg><use href="#i-file"/></svg><span>Travel agreement signed via Zoho Sign. PDF copy in your email.</span></div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span>After disembarking in Labuan Bajo on 26 Jul, your next flight is <strong>Labuan Bajo → Surabaya</strong>. Check Trip.com app for exact times.</span></div>
+            <div class="btn-row"><a class="gmail-btn" href="https://mail.google.com/mail/u/0/#inbox/19e260df5eb6f6e5" target="_blank"><svg><use href="#i-gmail"/></svg> Signed agreement</a></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑦ LBJ→SUB FLIGHT -->
+    <div class="trow" data-start="2026-07-26" data-end="2026-07-26">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#eef1f5,#dce2ec);color:#3a4a5c"><span style="font-size:22px;line-height:1">✈️</span></div>
+            <div class="card-meta">
+              <div class="card-date">Sun 26 Jul</div>
+              <div class="card-name">Fly Labuan Bajo → Surabaya</div>
+              <div class="card-hint">Post-liveaboard · onward to East Java</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#eef1f5;color:#3a4a5c;">Flight</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Flight details</div>
+            <div class="drow"><span class="dlabel">Route</span><span class="dval">Labuan Bajo (LBJ) → Surabaya (SUB)</span></div>
+            <div class="drow"><span class="dlabel">Booking</span><div class="dval-wrap"><span class="code">1167730416115351</span><span style="font-size:12px;color:var(--muted);"> via Trip.com</span><button class="copy-btn" onclick="copyText('1167730416115351',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="alert alert-info"><svg><use href="#i-info"/></svg><span>Check the Trip.com app for exact times, airline, and PNR for this leg.</span></div>
+            <div class="btn-row"><a class="gmail-btn" href="https://mail.google.com/mail/u/0/#inbox/19e20e76e256bada" target="_blank"><svg><use href="#i-gmail"/></svg> Booking email</a></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑧ SURABAYA NIGHT -->
+    <div class="trow" data-start="2026-07-26" data-end="2026-07-27">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#eef1f5,#dce2ec);color:#3a4a5c"><span style="font-size:22px;line-height:1">🏠</span></div>
+            <div class="card-meta">
+              <div class="card-date">Sun 26 Jul — Night</div>
+              <div class="card-name">Malang — Night before Mador tour</div>
+              <div class="card-hint">To be booked · near Malang train station</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#eef1f5;color:#3a4a5c;">Stay</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span>Mador Hostel pickup is <strong>6:15 AM–6:30 AM on 27 Jul</strong> within 3 km of Malang train station. Book accommodation nearby.</span></div>
+            <div class="alert alert-info"><svg><use href="#i-info"/></svg><span>Add accommodation here once confirmed.</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑨ MADOR DAY 1 — TUMPAKSEWU -->
+    <div class="trow" data-start="2026-07-27" data-end="2026-07-27">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#e0ecff,#c8dcfa);color:#1a5fa8"><span style="font-size:22px;line-height:1">🌊</span></div>
+            <div class="card-meta">
+              <div class="card-date">Mon 27 Jul — Day 1</div>
+              <div class="card-name">Tumpaksewu Waterfall Trek</div>
+              <div class="card-hint">Mador Hostel tour · pickup 6:15 AM</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#e0ecff;color:#1a5fa8;">Trek</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Overview</div>
+            <div class="drow"><span class="dlabel">Operator</span><span class="dval">Mador Hostel (@madorhostel)</span></div>
+            <div class="drow"><span class="dlabel">Pickup</span><span class="dval">6:15 AM–6:30 AM · within 3 km of Malang train station</span></div>
+            <div class="drow"><span class="dlabel">Duration</span><span class="dval">6:30 AM – 5:00 PM</span></div>
+            <div class="drow"><span class="dlabel">Sleep</span><span class="dval">Dorm or Homestay near Bromo · dinner included</span></div>
+            <div class="d-section">Schedule</div>
+            <div class="sched">
+              <div class="srow"><span class="stime">6:15 AM</span><span class="sdesc">Breakfast &amp; briefing at Mador Hostel</span></div>
+              <div class="srow"><span class="stime">6:30 AM</span><span class="sdesc">Drive to Tumpaksewu (~2.5 hrs)</span></div>
+              <div class="srow"><span class="stime">9:00 AM</span><span class="sdesc">Meet local trekking ranger</span></div>
+              <div class="srow"><span class="stime">9:15 AM</span><span class="sdesc">Trek to viewpoint, then down to waterfall base</span></div>
+              <div class="srow"><span class="stime">10:45 AM</span><span class="sdesc">Swim / dip at waterfall base (optional)</span></div>
+              <div class="srow"><span class="stime">11:00 AM</span><span class="sdesc">Hike back up, clean up</span></div>
+              <div class="srow"><span class="stime">12:00 PM</span><span class="sdesc">Lunch break</span></div>
+              <div class="srow"><span class="stime">1:00 PM</span><span class="sdesc">Drive to Bromo area, check in</span></div>
+              <div class="srow"><span class="stime">5:00 PM</span><span class="sdesc">Optional dinner &amp; free time · rest by 6:30 PM</span></div>
+            </div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span>Expect to get <strong>soaked wet</strong> at Tumpaksewu. Water shoes rental available on-site 20–40k.</span></div>
+            <div class="d-section">Pack</div>
+            <div class="tags">
+              <span class="tag">Change of clothes</span>
+              <span class="tag">Sunscreen</span>
+              <span class="tag">Towel</span>
+              <span class="tag">Trekking sandals / watershoes</span>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑩ MADOR DAY 2 — BROMO -->
+    <div class="trow" data-start="2026-07-28" data-end="2026-07-28">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#faeaea,#f4cccc);color:#a03030"><span style="font-size:22px;line-height:1">🏔️</span></div>
+            <div class="card-meta">
+              <div class="card-date">Tue 28 Jul — Day 2</div>
+              <div class="card-name">Bromo Sunrise & Crater Trek</div>
+              <div class="card-hint">4WD jeep · 2:00 AM wake-up</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#faeaea;color:#a03030;">Trek</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Overview</div>
+            <div class="drow"><span class="dlabel">Duration</span><span class="dval">2:00 AM – 3:00 PM</span></div>
+            <div class="drow"><span class="dlabel">Sleep</span><span class="dval">Palm Heritage Hotel, Bondowoso (pool hotel · dinner bento included)</span></div>
+            <div class="d-section">Schedule</div>
+            <div class="sched">
+              <div class="srow"><span class="stime">2:00 AM</span><span class="sdesc">Wake up · depart to jeep base</span></div>
+              <div class="srow"><span class="stime">2:30 AM</span><span class="sdesc">4WD jeep depart to Penanjakan (highest sunrise point)</span></div>
+              <div class="srow"><span class="stime">3:30 AM</span><span class="sdesc">Hot drinks provided while waiting for sunrise</span></div>
+              <div class="srow"><span class="stime">4:30 AM</span><span class="sdesc">Sunrise moment at Penanjakan viewpoint</span></div>
+              <div class="srow"><span class="stime">6:00 AM</span><span class="sdesc">Drive down to Bromo sand sea</span></div>
+              <div class="srow"><span class="stime">7:00 AM</span><span class="sdesc">Trek to Bromo crater rim (~1.5 hrs)</span></div>
+              <div class="srow"><span class="stime">9:30 AM</span><span class="sdesc">Breakfast at accommodation · check out 10:30 AM</span></div>
+              <div class="srow"><span class="stime">11:00 AM</span><span class="sdesc">Drive toward Bondowoso with lunch stop</span></div>
+              <div class="srow"><span class="stime">3:00 PM</span><span class="sdesc">Arrive Palm Heritage Hotel · rest until 12:30 AM</span></div>
+            </div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span>Temperature at Bromo can drop to <strong>5 °C</strong> and is very windy.</span></div>
+            <div class="d-section">Pack</div>
+            <div class="tags">
+              <span class="tag">Warm jacket</span>
+              <span class="tag">Long pants</span>
+              <span class="tag">Shawl / scarf</span>
+              <span class="tag">Sunscreen</span>
+              <span class="tag">Comfortable shoes</span>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑪ MADOR DAY 3 — IJEN -->
+    <div class="trow" data-start="2026-07-29" data-end="2026-07-29">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#ede0f8,#ddc8f4);color:#5a3a8a"><span style="font-size:22px;line-height:1">🔥</span></div>
+            <div class="card-meta">
+              <div class="card-date">Wed 29 Jul — Day 3</div>
+              <div class="card-name">Ijen Blue Fire & Crater Trek</div>
+              <div class="card-hint">12:00 AM departure · ferry drop to Bali</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#ede0f8;color:#5a3a8a;">Trek</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Overview</div>
+            <div class="drow"><span class="dlabel">Duration</span><span class="dval">12:00 AM – ~6:00 PM (ferry drop Bali Central)</span></div>
+            <div class="drow"><span class="dlabel">Drop-off</span><span class="dval">Mengwi station (Ubud) or Ubung station (Canggu / South Bali)</span></div>
+            <div class="d-section">Schedule</div>
+            <div class="sched">
+              <div class="srow"><span class="stime">12:00 AM</span><span class="sdesc">Check out · drive to Ijen base park</span></div>
+              <div class="srow"><span class="stime">2:15 AM</span><span class="sdesc">Hot snack &amp; trek brief by local guide</span></div>
+              <div class="srow"><span class="stime">3:00 AM</span><span class="sdesc">Trek 1.5 hrs to Ijen summit</span></div>
+              <div class="srow"><span class="stime">4:30 AM</span><span class="sdesc">Crater descent for blue fire (park policy dependent)</span></div>
+              <div class="srow"><span class="stime">5:30 AM</span><span class="sdesc">Sunrise at sulphur lake side (if descent allowed)</span></div>
+              <div class="srow"><span class="stime">6:00 AM</span><span class="sdesc">Walk up to Ijen upper viewpoint</span></div>
+              <div class="srow"><span class="stime">6:30 AM</span><span class="sdesc">Hike back down to parking area</span></div>
+              <div class="srow"><span class="stime">7:30 AM</span><span class="sdesc">Breakfast box from hotel</span></div>
+              <div class="srow"><span class="stime">8:00 AM</span><span class="sdesc">Drive to Ketapang Harbour · receive ferry ticket</span></div>
+              <div class="srow"><span class="stime">10:00 AM</span><span class="sdesc">Ferry to Bali (included — on your own)</span></div>
+              <div class="srow"><span class="stime">11:00 AM+</span><span class="sdesc">Drop to Bali Central — Mengwi or Ubung station</span></div>
+            </div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span><strong>DO NOT attempt if you have asthma</strong> — strong sulphur smell. Blue fire access not guaranteed — depends on daily park policy. Gas mask included.</span></div>
+            <div class="alert alert-info"><svg><use href="#i-info"/></svg><span>Ijen Health Statement required (included). Send your passport copy to Mador Hostel at least 1 day before.</span></div>
+            <div class="d-section">Pack</div>
+            <div class="tags">
+              <span class="tag">Warm jacket</span>
+              <span class="tag">Long pants</span>
+              <span class="tag">Sunscreen</span>
+              <span class="tag">Comfortable shoes</span>
+              <span class="tag">Goggles (own)</span>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑫ ARRIVE BALI — MYCAPSULE -->
+    <div class="trow" data-start="2026-07-29" data-end="2026-07-31">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:var(--teal-bg);color:var(--teal-c)"><span style="font-size:22px;line-height:1">🏠</span></div>
+            <div class="card-meta">
+              <div class="card-date">Tue 29 Jul — Night</div>
+              <div class="card-name">Mycapsule Bali — Seminyak</div>
+              <div class="card-hint">Check in after Ijen drop · 2 nights</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:var(--teal-pill);color:var(--teal-c);">2 nights</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Accommodation</div>
+            <div class="drow"><span class="dlabel">Hostel</span><div class="dval-wrap"><span>Mycapsule Bali</span><button class="copy-btn" onclick="copyText('Mycapsule Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Address</span><div class="dval-wrap"><span>Jl. Beraban No 20, Banjar Taman Seminyak, North Kuta, Bali</span><button class="copy-btn" onclick="copyText('Jl. Beraban No 20, Banjar Taman Seminyak, North Kuta, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Booking ref</span><div class="dval-wrap"><span class="code">95558-578789589</span><button class="copy-btn" onclick="copyText('95558-578789589',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Phone</span><div class="dval-wrap"><span><a href="tel:+6281337870013">+62 813-3787-0013</a></span><button class="copy-btn" onclick="copyText('+6281337870013',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Email</span><span class="dval"><a href="mailto:book.seminyak.mch@gmail.com">book.seminyak.mch@gmail.com</a></span></div>
+            <div class="drow"><span class="dlabel">Dates</span><span class="dval">Jul 29 – Jul 31 · 2 nights · 2 guests</span></div>
+            <div class="alert alert-info"><svg><use href="#i-info"/></svg><span>You will be dropped at <strong>Mengwi or Ubung bus station</strong> from the Ijen tour. Grab a ride from there to Mycapsule (~30–45 min depending on traffic).</span></div>
+            <div class="btn-row">
+              <a class="map-btn" href="https://maps.google.com/?q=Jl.+Beraban+No+20+Seminyak+Bali" target="_blank"><svg><use href="#i-pin"/></svg> Open in Maps</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑬ JUL 30 — SCOOTERS TANAH LOT CLUBBING -->
+    <div class="trow" data-start="2026-07-30" data-end="2026-07-30">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:var(--amber-bg);color:var(--amber-c)"><span style="font-size:22px;line-height:1">🛵</span></div>
+            <div class="card-meta">
+              <div class="card-date">Thu 30 Jul</div>
+              <div class="card-name">Scooters · Tanah Lot · Club Night</div>
+              <div class="card-hint">Meet friends · full day + night out</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:var(--amber-pill);color:var(--amber-c);">Big day</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Scooter Rental</div>
+            <div class="drow"><span class="dlabel">Option A</span><span class="dval">Ask Mycapsule front desk night before — they arrange delivery to hostel</span></div>
+            <div class="drow"><span class="dlabel">Option B</span><div class="dval-wrap"><span>Cinchy Scooter Rental · Jl. Plawa No.50, Seminyak (walking distance)</span><button class="copy-btn" onclick="copyText('Cinchy Scooter Rental, Jl. Plawa No.50, Seminyak',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Option C</span><div class="dval-wrap"><span>Bikago — free delivery to Seminyak, book online at bikago.com</span></div></div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span>Everyone needs a valid <strong>international driving licence</strong>. Bring passport for ID.</span></div>
+            <div class="d-section">Schedule</div>
+            <div class="sched">
+              <div class="srow"><span class="stime">8:00 AM</span><span class="sdesc">Breakfast at warung on Jl. Beraban</span></div>
+              <div class="srow"><span class="stime">8:30 AM</span><span class="sdesc">Pick up scooters · meet friends</span></div>
+              <div class="srow"><span class="stime">9:00 AM</span><span class="sdesc">Ride to Tanah Lot (~40 min northwest)</span></div>
+              <div class="srow"><span class="stime">9:45 AM</span><span class="sdesc">Arrive Tanah Lot · explore cliff paths, temple rock, ocean views (~2 hrs)</span></div>
+              <div class="srow"><span class="stime">12:00 PM</span><span class="sdesc">Ride back through Canggu for lunch</span></div>
+              <div class="srow"><span class="stime">12:30 PM</span><span class="sdesc">Lunch — Warung Sika or Warung Varuna, Canggu</span></div>
+              <div class="srow"><span class="stime">2:00 AM</span><span class="sdesc">Beach chill — Batu Bolong or Echo Beach, Canggu</span></div>
+              <div class="srow"><span class="stime">5:30 AM</span><span class="sdesc">Ride back to Seminyak · shower · get ready</span></div>
+              <div class="srow"><span class="stime">7:30 AM</span><span class="sdesc">Dinner — Motel Mexicola or La Favela, Seminyak</span></div>
+              <div class="srow"><span class="stime">9:30 AM</span><span class="sdesc">Club hop — Atlas Beach Club → Ku De Ta → wherever's pumping</span></div>
+            </div>
+            <div class="d-section">Tanah Lot info</div>
+            <div class="drow"><span class="dlabel">Address</span><div class="dval-wrap"><span>Beraban, Kediri, Tabanan, Bali</span><button class="copy-btn" onclick="copyText('Tanah Lot Temple, Beraban, Kediri, Tabanan, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Entry fee</span><span class="dval">IDR 75,000 per adult · cash only at gate</span></div>
+            <div class="drow"><span class="dlabel">Hours</span><span class="dval">7:00 AM – 7:00 AM daily</span></div>
+            <div class="d-section">Dinner spots</div>
+            <div class="drow"><span class="dlabel">Motel Mexicola</span><div class="dval-wrap"><span>Jl. Kayu Jati No.9X, Kerobokan Kelod, Seminyak</span><button class="copy-btn" onclick="copyText('Motel Mexicola, Jl. Kayu Jati No.9X, Kerobokan Kelod, Seminyak',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">La Favela</span><div class="dval-wrap"><span>Jl. Kayu Aya No.88X, Seminyak</span><button class="copy-btn" onclick="copyText('La Favela, Jl. Kayu Aya No.88X, Seminyak',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="d-section">Clubs</div>
+            <div class="drow"><span class="dlabel">Atlas Beach Club</span><div class="dval-wrap"><span>Jl. Pantai Berawa, Canggu</span><button class="copy-btn" onclick="copyText('Atlas Beach Club, Jl. Pantai Berawa, Canggu',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Ku De Ta</span><div class="dval-wrap"><span>Jl. Kayu Aya No.9, Seminyak</span><button class="copy-btn" onclick="copyText('Ku De Ta, Jl. Kayu Aya No.9, Seminyak',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="alert alert-info"><svg><use href="#i-info"/></svg><span>Leave scooters at the hostel for the night — use Grab or Gojek so everyone can drink freely.</span></div>
+            <div class="btn-row">
+              <a class="map-btn" href="https://maps.google.com/?q=Tanah+Lot+Temple+Bali" target="_blank"><svg><use href="#i-pin"/></svg> Tanah Lot on Maps</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑭ JUL 31 — ATV ADVENTURE -->
+    <div class="trow" data-start="2026-07-31" data-end="2026-07-31">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:var(--lime-bg);color:var(--lime-c)"><span style="font-size:22px;line-height:1">🏍️</span></div>
+            <div class="card-meta">
+              <div class="card-date">Fri 31 Jul</div>
+              <div class="card-name">ATV Quad Bikes — Ubud</div>
+              <div class="card-hint">Rice terraces · jungle trails · optional rafting</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:var(--lime-pill);color:var(--lime-c);">Adventure</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Activities</div>
+            <div class="drow"><span class="dlabel">ATV Operator</span><div class="dval-wrap"><span>Bali ATV Ride — Jl. Raya Tegallalang, Ubud area</span><button class="copy-btn" onclick="copyText('Bali ATV Ride, Jl. Raya Tegallalang, Ubud, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Duration</span><span class="dval">~1.5 hrs through rice terraces and jungle — book in advance</span></div>
+            <div class="drow"><span class="dlabel">Bonus</span><span class="dval">White water rafting on Ayung River — same area, easy to stack same day</span></div>
+            <div class="d-section">Schedule</div>
+            <div class="sched">
+              <div class="srow"><span class="stime">Morning</span><span class="sdesc">Drive or Grab up to Ubud area (~1.5 hrs from Seminyak)</span></div>
+              <div class="srow"><span class="stime">10:00 AM</span><span class="sdesc">ATV quad biking — rice terrace and jungle route</span></div>
+              <div class="srow"><span class="stime">12:00 PM</span><span class="sdesc">Lunch break in Ubud</span></div>
+              <div class="srow"><span class="stime">1:30 AM</span><span class="sdesc">Optional: Ayung River white water rafting (~2 hrs)</span></div>
+              <div class="srow"><span class="stime">4:30 AM</span><span class="sdesc">Head back to Seminyak</span></div>
+            </div>
+            <div class="alert alert-info"><svg><use href="#i-info"/></svg><span>Book ATV ahead of time especially in peak season July–August. Ayung rafting operators are clustered around the same area — easy to arrange on the day.</span></div>
+            <div class="btn-row">
+              <a class="map-btn" href="https://maps.google.com/?q=Bali+ATV+Ride+Ubud" target="_blank"><svg><use href="#i-pin"/></svg> Bali ATV on Maps</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑮ AUG 1 — NUSA PENIDA + BUNGEE -->
+    <div class="trow" data-start="2026-08-01" data-end="2026-08-01">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:var(--sky-bg);color:var(--sky-c)"><span style="font-size:22px;line-height:1">🏝️</span></div>
+            <div class="card-meta">
+              <div class="card-date">Sat 1 Aug</div>
+              <div class="card-name">Nusa Penida — Bungee + West Circuit</div>
+              <div class="card-hint">Sanur fast boat · full day trip</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:var(--sky-pill);color:var(--sky-c);">Day trip</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Getting there</div>
+            <div class="drow"><span class="dlabel">Departure</span><div class="dval-wrap"><span>Sanur Harbour — fast boat 7:00 AM · 30 min crossing</span><button class="copy-btn" onclick="copyText('Sanur Harbour, Jl. Hang Tuah, Sanur, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Return</span><span class="dval">Fast boat from Toyapakeh or Crystal Bay — aim for 5:00 AM–6:00 AM</span></div>
+            <div class="drow"><span class="dlabel">Transport</span><span class="dval">Hire scooter on the island or join a day tour — tour recommended for efficiency</span></div>
+            <div class="d-section">Schedule</div>
+            <div class="sched">
+              <div class="srow"><span class="stime">6:00 AM</span><span class="sdesc">Leave Seminyak · Grab to Sanur Harbour</span></div>
+              <div class="srow"><span class="stime">7:00 AM</span><span class="sdesc">Fast boat departs Sanur</span></div>
+              <div class="srow"><span class="stime">7:30 AM</span><span class="sdesc">Arrive Nusa Penida · head straight to bungee</span></div>
+              <div class="srow"><span class="stime">8:30 AM</span><span class="sdesc">Bungee jump — clifftop ocean views</span></div>
+              <div class="srow"><span class="stime">10:00 AM</span><span class="sdesc">Kelingking Beach viewpoint — iconic T-rex cliff</span></div>
+              <div class="srow"><span class="stime">11:30 AM</span><span class="sdesc">Broken Beach + Angel's Billabong</span></div>
+              <div class="srow"><span class="stime">1:30 AM</span><span class="sdesc">Lunch on island</span></div>
+              <div class="srow"><span class="stime">2:30 AM</span><span class="sdesc">Crystal Bay — swim, snorkel</span></div>
+              <div class="srow"><span class="stime">5:00 AM</span><span class="sdesc">Fast boat back to Sanur</span></div>
+            </div>
+            <div class="d-section">Key spots</div>
+            <div class="drow"><span class="dlabel">Kelingking</span><div class="dval-wrap"><span>Kelingking Beach, Nusa Penida</span><button class="copy-btn" onclick="copyText('Kelingking Beach, Nusa Penida, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Broken Beach</span><div class="dval-wrap"><span>Broken Beach (Pasih Uug), Nusa Penida</span><button class="copy-btn" onclick="copyText('Broken Beach, Nusa Penida, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Crystal Bay</span><div class="dval-wrap"><span>Crystal Bay Beach, Nusa Penida</span><button class="copy-btn" onclick="copyText('Crystal Bay Beach, Nusa Penida, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span>Nusa Penida roads are rough — go slow on the scooter and check your tyre pressure. Some roads to Kelingking are steep.</span></div>
+            <div class="btn-row">
+              <a class="map-btn" href="https://maps.google.com/?q=Sanur+Harbour+Bali" target="_blank"><svg><use href="#i-pin"/></svg> Sanur Harbour</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑯ AUG 2 — ULUWATU + SAVAYA -->
+    <div class="trow" data-start="2026-08-02" data-end="2026-08-02">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:var(--indigo-bg);color:var(--indigo-c)"><span style="font-size:22px;line-height:1">🛕</span></div>
+            <div class="card-meta">
+              <div class="card-date">Sun 2 Aug</div>
+              <div class="card-name">Uluwatu Temple + Savaya Club</div>
+              <div class="card-hint">Cliff temple at sunset · #1 club in Asia</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:var(--indigo-pill);color:var(--indigo-c);">Nightlife</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Schedule</div>
+            <div class="sched">
+              <div class="srow"><span class="stime">Afternoon</span><span class="sdesc">Relaxed morning · head south to Uluwatu ~3:00 AM</span></div>
+              <div class="srow"><span class="stime">4:00 AM</span><span class="sdesc">Arrive Uluwatu Temple — cliff walk, ocean views, monkeys</span></div>
+              <div class="srow"><span class="stime">6:00 AM</span><span class="sdesc">Kecak fire dance at the temple (100k IDR separate ticket)</span></div>
+              <div class="srow"><span class="stime">7:30 AM</span><span class="sdesc">Head to Savaya — 10 min drive from Uluwatu</span></div>
+              <div class="srow"><span class="stime">8:00 PM+</span><span class="sdesc">Savaya — clifftop club 100m above Indian Ocean</span></div>
+            </div>
+            <div class="d-section">Uluwatu Temple</div>
+            <div class="drow"><span class="dlabel">Address</span><div class="dval-wrap"><span>Jl. Raya Uluwatu, Pecatu, Kuta Selatan, Bali</span><button class="copy-btn" onclick="copyText('Uluwatu Temple, Jl. Raya Uluwatu, Pecatu, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Entry</span><span class="dval">IDR 50,000 · sarong required (available at gate)</span></div>
+            <div class="d-section">Savaya</div>
+            <div class="drow"><span class="dlabel">Address</span><div class="dval-wrap"><span>Jl. Belimbing Sari, Banjar Tambiyak, Pecatu, Uluwatu</span><button class="copy-btn" onclick="copyText('Savaya Bali, Jl. Belimbing Sari, Pecatu, Uluwatu, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Age</span><span class="dval">21+ · valid photo ID required · smart casual dress code</span></div>
+            <div class="drow"><span class="dlabel">Tickets</span><span class="dval">Book via savaya.com — check event calendar, significantly better on DJ event nights</span></div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span>Savaya is 45 min+ from Seminyak — plan your late-night Grab home before you go. No singlets, no cut-off clothing, no athletic wear.</span></div>
+            <div class="alert alert-info"><svg><use href="#i-info"/></svg><span>Watch out for monkeys at Uluwatu Temple — they grab sunglasses, phones, and bags. Keep everything secured.</span></div>
+            <div class="btn-row">
+              <a class="map-btn" href="https://maps.google.com/?q=Uluwatu+Temple+Bali" target="_blank"><svg><use href="#i-pin"/></svg> Uluwatu on Maps</a>
+              <a class="map-btn" href="https://maps.google.com/?q=Savaya+Bali+Uluwatu" target="_blank"><svg><use href="#i-pin"/></svg> Savaya on Maps</a>
+              <a class="gmail-btn" href="https://www.savaya.com/event-calendar" target="_blank"><svg><use href="#i-web"/></svg> Savaya events</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑰ AUG 3 — EXPLORE BALI -->
+    <div class="trow" data-start="2026-08-03" data-end="2026-08-03">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:var(--coral-bg);color:var(--coral-c)"><span style="font-size:22px;line-height:1">📍</span></div>
+            <div class="card-meta">
+              <div class="card-date">Mon 3 Aug</div>
+              <div class="card-name">Explore Bali — Flex Day</div>
+              <div class="card-hint">Rice terraces · temples · or Ubud town</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:var(--coral-pill);color:var(--coral-c);">Explore</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Option A — Island loop</div>
+            <div class="drow"><span class="dlabel">Morning</span><span class="dval">Tanah Lot (already done) → swap for Jatiluwih UNESCO rice terraces</span></div>
+            <div class="drow"><span class="dlabel">Afternoon</span><span class="dval">Tegallalang Rice Terraces, Ubud</span></div>
+            <div class="drow"><span class="dlabel">Sunset</span><div class="dval-wrap"><span>Uluwatu (if you want a second visit) or Seminyak Beach sunset</span></div></div>
+            <div class="d-section">Option B — Ubud full day</div>
+            <div class="drow"><span class="dlabel">Morning</span><span class="dval">Sacred Monkey Forest Sanctuary, Ubud</span></div>
+            <div class="drow"><span class="dlabel">Midday</span><span class="dval">Ubud art market + lunch at a warung on Jl. Raya Ubud</span></div>
+            <div class="drow"><span class="dlabel">Afternoon</span><span class="dval">Tegallalang Rice Terraces · Campuhan Ridge Walk</span></div>
+            <div class="d-section">Key spots</div>
+            <div class="drow"><span class="dlabel">Jatiluwih</span><div class="dval-wrap"><span>Jatiluwih, Penebel, Tabanan, Bali</span><button class="copy-btn" onclick="copyText('Jatiluwih Rice Terraces, Tabanan, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Tegallalang</span><div class="dval-wrap"><span>Tegallalang Rice Terrace, Ubud, Bali</span><button class="copy-btn" onclick="copyText('Tegallalang Rice Terrace, Ubud, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Monkey Forest</span><div class="dval-wrap"><span>Sacred Monkey Forest Sanctuary, Ubud</span><button class="copy-btn" onclick="copyText('Sacred Monkey Forest Sanctuary, Ubud, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑱ AUG 4 — CHILL + LAST NIGHT -->
+    <div class="trow" data-start="2026-08-04" data-end="2026-08-04">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:var(--rose-bg);color:var(--rose-c)"><span style="font-size:22px;line-height:1">📍</span></div>
+            <div class="card-meta">
+              <div class="card-date">Tue 4 Aug</div>
+              <div class="card-name">Chill Day + Last Night Out</div>
+              <div class="card-hint">Beach clubs · dinner · optional night out</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:var(--rose-pill);color:var(--rose-c);">Chill</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Day plan</div>
+            <div class="sched">
+              <div class="srow"><span class="stime">Morning</span><span class="sdesc">Slow start · last Bali breakfast at a warung</span></div>
+              <div class="srow"><span class="stime">Afternoon</span><span class="sdesc">Beach club — Potato Head or Finns Beach Club in Seminyak/Canggu</span></div>
+              <div class="srow"><span class="stime">Evening</span><span class="sdesc">Dinner · last sunset in Bali</span></div>
+              <div class="srow"><span class="stime">Night</span><span class="sdesc">Optional last night out if still standing 🔥</span></div>
+            </div>
+            <div class="d-section">Beach clubs</div>
+            <div class="drow"><span class="dlabel">Potato Head</span><div class="dval-wrap"><span>Jl. Petitenget No.51B, Seminyak</span><button class="copy-btn" onclick="copyText('Potato Head Beach Club, Jl. Petitenget No.51B, Seminyak, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Finns Beach Club</span><div class="dval-wrap"><span>Jl. Pantai Berawa No.99, Canggu</span><button class="copy-btn" onclick="copyText('Finns Beach Club, Jl. Pantai Berawa No.99, Canggu, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑲ AUG 5 — SHOPPING + FLIGHT -->
+    <div class="trow" data-start="2026-08-05" data-end="2026-08-05">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:var(--pink-bg);color:var(--pink-c)"><span style="font-size:22px;line-height:1">📍</span></div>
+            <div class="card-meta">
+              <div class="card-date">Wed 5 Aug</div>
+              <div class="card-name">Shopping Day — Then Fly Home</div>
+              <div class="card-hint">Full day shopping · flight 11:25 PM</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:var(--pink-pill);color:var(--pink-c);">Last day</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Shopping spots</div>
+            <div class="drow"><span class="dlabel">Seminyak Square</span><div class="dval-wrap"><span>Jl. Raya Seminyak, Seminyak, Bali</span><button class="copy-btn" onclick="copyText('Seminyak Square, Jl. Raya Seminyak, Seminyak, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Kuta Art Market</span><div class="dval-wrap"><span>Jl. Bakung Sari, Kuta, Bali</span><button class="copy-btn" onclick="copyText('Kuta Art Market, Jl. Bakung Sari, Kuta, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="drow"><span class="dlabel">Kuta Square</span><div class="dval-wrap"><span>Jl. Bakung Sari, Kuta, Bali</span><button class="copy-btn" onclick="copyText('Kuta Square, Kuta, Bali',this)"><svg><use href="#i-copy"/></svg>Copy</button></div></div>
+            <div class="d-section">Flight day schedule</div>
+            <div class="sched">
+              <div class="srow"><span class="stime">Morning</span><span class="sdesc">Shopping — Seminyak Square + Kuta Art Market</span></div>
+              <div class="srow"><span class="stime">Afternoon</span><span class="sdesc">Last meal · pack bags · check out</span></div>
+              <div class="srow"><span class="stime">8:25 AM</span><span class="sdesc">Arrive at Denpasar Airport (DPS) — 3 hrs before flight</span></div>
+              <div class="srow"><span class="stime">11:25 AM</span><span class="sdesc">Jetstar JQ050 departs Denpasar → Avalon</span></div>
+            </div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span>Departure flight is <strong>11:25 PM</strong> from Denpasar (DPS). Be at airport by <strong>8:25 PM</strong>. No free checked baggage.</span></div>
+            <div class="btn-row">
+              <a class="map-btn" href="https://maps.google.com/?q=Ngurah+Rai+International+Airport+Bali" target="_blank"><svg><use href="#i-pin"/></svg> DPS Airport</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⑳ RETURN FLIGHT -->
+    <div class="trow" data-start="2026-08-05" data-end="2026-08-06">
+      <div class="trow-dot"><div class="dot"></div></div>
+      <div class="trow-card">
+        <div class="trip-card" onclick="toggle(this)">
+          <div class="card-row">
+            <div class="card-icon" style="background:linear-gradient(135deg,#fff0e0,#ffe4c8);color:#c84b00"><span style="font-size:22px;line-height:1">🛬</span></div>
+            <div class="card-meta">
+              <div class="card-date">Wed 5 Aug — Overnight</div>
+              <div class="card-name">Fly Home — Bali → Avalon</div>
+              <div class="card-hint">Jetstar JQ050 · arrives 6 Aug 7:00 AM</div>
+            </div>
+            <div class="card-right">
+              <span class="type-pill" style="background:#fff0e0;color:#c84b00;">Flight</span>
+              <div class="chevron"><svg><use href="#i-chevron"/></svg></div>
+            </div>
+          </div>
+          <div class="card-detail"><div class="detail-inner">
+            <div class="d-section">Flight details</div>
+            <div class="drow"><span class="dlabel">Flight</span><span class="dval">Jetstar JQ050 · Airbus A321neo · Economy</span></div>
+            <div class="drow"><span class="dlabel">Departs</span><span class="dval">11:25 PM Wed 5 Aug — Denpasar (DPS)</span></div>
+            <div class="drow"><span class="dlabel">Arrives</span><span class="dval">7:00 AM Thu 6 Aug — Avalon Airport (AVV)</span></div>
+            <div class="drow"><span class="dlabel">PNR codes</span><span class="dval"><span class="code">KWYCJK</span> &nbsp;<span class="code">YWS6TZ</span> &nbsp;<span class="code">WWMSUZ</span></span></div>
+            <div class="alert alert-warn"><svg><use href="#i-warn"/></svg><span>Overnight flight. Be at DPS by <strong>8:25 PM</strong>. No free checked baggage.</span></div>
+            <div class="btn-row"><a class="gmail-btn" href="https://mail.google.com/mail/u/0/#inbox/19e20dbe820addb5" target="_blank"><svg><use href="#i-gmail"/></svg> Booking email</a></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /timeline -->
+</main>
+
+<script>
+function copyText(text, btn){
+  navigator.clipboard.writeText(text).then(()=>{
+    const orig = btn.innerHTML;
+    btn.innerHTML = '<svg><use href="#i-check2"/></svg>Copied';
+    btn.classList.add('copied');
+    setTimeout(()=>{ btn.innerHTML=orig; btn.classList.remove('copied'); }, 2000);
+  }).catch(()=>{
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    const orig = btn.innerHTML;
+    btn.innerHTML = '<svg><use href="#i-check2"/></svg>Copied';
+    btn.classList.add('copied');
+    setTimeout(()=>{ btn.innerHTML=orig; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+function toggle(card){
+  const isOpen = card.classList.contains('open');
+  document.querySelectorAll('.trip-card.open').forEach(c => c.classList.remove('open'));
+  if(!isOpen) card.classList.add('open');
+}
+
+(function(){
+  const tripStart = new Date('2026-07-20');
+  const tripEnd   = new Date('2026-08-06');
+  const today = new Date(); today.setHours(0,0,0,0);
+  const msDay = 864e5;
+
+  document.querySelectorAll('.trow[data-start]').forEach(row => {
+    const s = new Date(row.dataset.start); s.setHours(0,0,0,0);
+    const e = new Date(row.dataset.end);   e.setHours(0,0,0,0);
+    if(today > e){
+      row.classList.add('is-done');
+    } else if(today >= s && today <= e){
+      row.classList.add('is-today');
+      const card = row.querySelector('.trip-card');
+      const banner = document.createElement('div');
+      banner.className = 'today-banner';
+      banner.innerHTML = '<svg width="11" height="11"><use href="#i-star"/></svg> Today';
+      card.insertBefore(banner, card.firstChild);
+      card.classList.add('open');
+      setTimeout(()=>row.scrollIntoView({behavior:'smooth',block:'center'}),400);
+    } else {
+      row.classList.add('is-upcoming');
+    }
+  });
+
+  const pill = document.getElementById('status-pill');
+  if(today < tripStart){
+    const d = Math.round((tripStart-today)/msDay);
+    pill.textContent = d===1 ? '✈ Departing tomorrow!' : `✈ ${d} days to go`;
+  } else if(today > tripEnd){
+    pill.textContent = '✓ Trip complete';
+  } else {
+    const day = Math.round((today-tripStart)/msDay)+1;
+    const left = Math.round((tripEnd-today)/msDay);
+    pill.textContent = `Day ${day} of 17 · ${left} left`;
+  }
+})();
+</script>
+</body>
+</html>
